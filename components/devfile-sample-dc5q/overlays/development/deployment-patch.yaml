@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dc5q
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0047-tenant/ci1t-43256-0047-app/devfile-sample-dc5q@sha256:1314ab93064a74d2ee9bcb8e953e6d171ebfc5720da7a0f331a7272dee423c6b
+        name: my-nodejs
+        resources: {}
+status: {}

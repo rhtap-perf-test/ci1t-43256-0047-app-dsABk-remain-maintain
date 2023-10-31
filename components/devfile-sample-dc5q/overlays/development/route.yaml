@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-dc5q
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-dc5q
+    app.kubernetes.io/part-of: ci1t-43256-0047-app
+  name: devfile-sample-dc5qgssd
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-dc5q
+    weight: null
+status: {}
